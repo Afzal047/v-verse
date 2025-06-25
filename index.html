@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Verse - Network for Veterinary Professionals</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="./img/logo.jpg" alt="V-Verse Logo">
+                <h1>V-Verse</h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for vets, clinics, or topics...">
+            </div>
+            
+            <div class="nav-links">
+                <div class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item">
+                    <!-- <i class="fas fa-user-friends"></i> -->
+                    <!-- <span>Network</span> -->
+                </div>
+                <div class="nav-item" onclick="window.location.href = 'jobs.html';">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span >Cart</span>
+                </div>
+                <div class="nav-item" onclick="window.location.href = 'jobs.html';">
+                    <i class="fas fa-heart"></i>
+                    <span >Wishlist</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Messages</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Notifications</span>
+                </div>
+                <div class="nav-item profile-toggle" data-profile-toggle>
+                    <i class="fas fa-user-circle"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Left Sidebar -->
+    
+        <div class="left-sidebar">
+            <div class="profile-card">
+                <div class="profile-banner"></div>
+                <div class="profile-info">
+                    <div class="profile-pic">
+                        <img src="./img/logo.jpg" alt="Profile Picture">
+                    </div>
+                    <h2>Dr. Sarah Johnson</h2>
+                    <p>Veterinary Surgeon at Animal Care Clinic</p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="number">542</div>
+                        <div class="label">Connections</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="number">12</div>
+                        <div class="label">Posts</div>
+                    </div>
+                </div>
+            </div>
+                
+                <!-- The Vs Section -->
+                <div class="section-card active">
+                    <div class="section-header">
+                        <h3>The Vs</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-guide'">
+                            <i class="fas fa-book-open"></i>
+                            <span>V-Guide</span>
+                        </div>
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-blog'">
+                            <i class="fas fa-blog"></i>
+                            <span>V-Blog</span>
+                        </div>
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-nation'">
+                            <i class="fas fa-users"></i>
+                            <span>V-Nation</span>
+                        </div>
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-tube/main-page'">
+                            <i class="fas fa-video"></i>
+                            <span>V-Tube</span>
+                        </div>
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-jobs'">
+                            <i class="fas fa-briefcase"></i>
+                            <span>V-Jobs</span>
+                        </div>
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-lance'">
+                            <i class="fas fa-handshake"></i>
+                            <span>V-Lance</span>
+                        </div>
+                        <div class="section-item" onclick="window.location.href = 'https://app.myvverse.com/v-college'">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>V-College</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-store"></i>
+                            <span>V-Market</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>V-Events</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>V-Webinars</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>V-Experts</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>V-Buzz</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-podcast"></i>
+                            <span>V-Cast</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-book"></i>
+                            <span>V-Books</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>V-Support</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- VV Assets Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h3>VV Assets</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Blog Posts</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Social Page</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-users"></i>
+                            <span>Social Groups</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-tv"></i>
+                            <span>Channels</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-video"></i>
+                            <span>Videos</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-film"></i>
+                            <span>Shorts</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Jobs</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-concierge-bell"></i>
+                            <span>Services</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Projects</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Courses</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-store"></i>
+                            <span>Stores</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-box-open"></i>
+                            <span>Physical Products</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-file-download"></i>
+                            <span>Digital Products</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-calendar-day"></i>
+                            <span>Events</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Webinars</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Consultations</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>Sponsorships</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- VV Profiles Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h3>VV Profiles</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-item">
+                            <i class="fas fa-user"></i>
+                            <span>Personal Profiles</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-building"></i>
+                            <span>Entity Profiles</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-pen-fancy"></i>
+                            <span>V-Blog Authors</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-users"></i>
+                            <span>V-Nation Authors</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-video"></i>
+                            <span>V-Tube Authors</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>V-Candidates</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>V-Employers</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>V-Lancers</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>V-Clients</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>V-Instructors</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-store"></i>
+                            <span>V-Sellers</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>V-Organizers</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-microphone"></i>
+                            <span>V-Hosts</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-star"></i>
+                            <span>V-Experts</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>V-Influencers</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-podcast"></i>
+                            <span>V-Cast Authors</span>
+                        </div>
+                        <div class="section-item">
+                            <i class="fas fa-book"></i>
+                            <span>V-Books Authors</span>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- <div class="features-card">
+                <div class="features-header" >
+                    <h3>V-Verse Features</h3>
+                    <p>All-in-one digital platform for the global veterinary community</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-item" >
+                        <i class="fas fa-book-open"></i>
+                        <span>V-Guide</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-blog"></i>
+                        <span>V-Blog</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-users"></i>
+                        <span>V-Nation</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-video"></i>
+                        <span>V-Tube</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-briefcase"></i>
+                        <span>V-Jobs</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-handshake"></i>
+                        <span>V-Lance</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>V-College</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-store"></i>
+                        <span>V-Market</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>V-Events</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>V-Webinars</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-user-tie"></i>
+                        <span>V-Experts</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-newspaper"></i>
+                        <span>V-Buzz</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-podcast"></i>
+                        <span>V-Cast</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-book"></i>
+                        <span>V-Books</span>
+                    </div>
+                    <div class="feature-item" >
+                        <i class="fas fa-question-circle"></i>
+                        <span>V-Support</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="news-card">
+                <h3>Veterinary Groups</h3>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Small Animal Practitioners</strong> - 5,432 members</p>
+                </div>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Equine Veterinarians</strong> - 3,210 members</p>
+                </div>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Veterinary Students Network</strong> - 8,765 members</p>
+                </div>
+            </div> -->
+        </div>
+
+
+        <!-- Feed -->
+        <div class="feed">
+            <div class="post-box">
+                <div class="post-input">
+                    <img src="./img/logo.jpg" alt="User">
+                    <input type="text" placeholder="Share an article, photo, or insight..." id="postInput">
+                </div>
+                <div class="post-options">
+                    <div class="post-option" onclick="openModal('photo')">
+                        <i class="fas fa-image" style="color: #70b5f9;"></i>
+                        <span>Photo</span>
+                    </div>
+                    <div class="post-option" onclick="openModal('video')">
+                        <i class="fas fa-video" style="color: #7fc15e;"></i>
+                        <span>Video</span>
+                    </div>
+                    <div class="post-option" onclick="openModal('event')">
+                        <i class="fas fa-calendar-alt" style="color: #e7a33e;"></i>
+                        <span>Event</span>
+                    </div>
+                    <div class="post-option" onclick="openModal('article')">
+                        <i class="fas fa-newspaper" style="color: #f5987e;"></i>
+                        <span>Write Article</span>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-container"></div>
+
+            <div class="post-box post">
+                <div class="post-header">
+                    <img src="./img/profile_alice.png" alt="User">
+                    <div class="post-user">
+                        <h3>Dr. Michael Chen</h3>
+                        <p>Veterinary Cardiologist • 2nd degree connection • 1d ago</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Just published a new research paper on feline cardiomyopathy in the Journal of Veterinary Cardiology. Excited to share our findings on early detection methods that could help improve outcomes for our feline patients!</p>
+                    <img src="./post4.png" alt="Research" class="post-image">
+                </div>
+                <div class="post-stats">
+                    <span>42 reactions • 8 comments</span>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post-box post">
+                <div class="post-header">
+                    <img src="./img/logo.jpg" alt="User">
+                    <div class="post-user">
+                        <h3>Dr. Michael Chen</h3>
+                        <p>Veterinary Cardiologist • 2nd degree connection • 1d ago</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Just published a new research paper on feline cardiomyopathy in the Journal of Veterinary Cardiology. Excited to share our findings on early detection methods that could help improve outcomes for our feline patients!</p>
+                    <img src="./img/post2.png" alt="Research" class="post-image">
+                </div>
+                <div class="post-stats">
+                    <span>42 reactions • 8 comments</span>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-box post">
+                <div class="post-header">
+                    <img src="./img/logo.jpg" alt="User">
+                    <div class="post-user">
+                        <h3>Animal Health Foundation</h3>
+                        <p>Organization • 3rd degree connection • 3d ago</p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>We're hiring! The Animal Health Foundation is looking for a Veterinary Research Director to lead our canine cancer studies. Must have DVM and PhD with 5+ years research experience. Competitive salary and benefits.</p>
+                </div>
+                <div class="post-stats">
+                    <span>128 reactions • 24 comments</span>
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>Like</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="far fa-comment"></i>
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-share"></i>
+                        <span>Share</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="news-card">
+                <h3>Veterinary blogs update</h3>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>New canine flu strain</strong> detected in Midwest, vaccines being developed</p>
+                </div>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>AVMA conference 2023</strong> registration now open with early bird discounts</p>
+                </div>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Study shows</strong> benefits of telemedicine for routine pet care</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <h3>Upcoming Events</h3>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Dental Workshop</strong> - June 15, Online</p>
+                </div>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Emergency Care Symposium</strong> - July 8-10, Chicago</p>
+                </div>
+                <div class="news-item">
+                    <span class="bullet">•</span>
+                    <p><strong>Vet Tech Certification</strong> - Applications due August 1</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    
+   
+      <style>
+        ul.list li i{
+            color: rgb(217, 215, 215);
+        }
+        footer {
+          margin: 0;
+          font-family: 'Poppins', sans-serif;
+        }
+        
+        .container {
+            color: white;
+            background: linear-gradient(90deg, #0052cc 0%, #d90751 100%);
+          max-width: 1300px;
+          margin: 0 auto;
+          padding: 40px 20px;
+          padding-bottom: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 20px;
+        }
+    
+        .column {
+          flex: 1 1 220px;
+          min-width: 220px;
+        }
+    
+        h2 {
+          font-size: 26px;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+    
+        h1.logo {
+          font-size: 36px;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+        }
+        
+        .logo img {
+            height: 36px;
+            border-radius: 50%;
+          margin-right: 8px;
+        }
+    sub{
+        font-size: 9px;
+        margin-top: 1.3rem;
+        margin-left: 5px;
+    }
+        .desc {
+          margin: 15px 0 25px;
+          line-height: 1.5;
+          font-size: 13px ;
+        }
+    
+        .info-block {
+          margin-bottom: 20px;
+        }
+    
+        .info-block p {
+          margin: 8px 0;
+          cursor: pointer;
+        }
+    
+        .info-block i {
+          margin-right: 10px;
+        }
+    
+        ul.list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+    
+        ul.list li {
+          margin: 8px 0;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+    
+        ul.list li img {
+          height: 18px;
+          margin-right: 10px;
+        }
+    
+        .socials img {
+          height: 24px;
+          margin-right: 12px;
+          cursor: pointer;
+        }
+    
+        .separator {
+          border-top: 1px solid white;
+          margin: 20px 0;
+        }
+        .right{
+            border-top: 1px solid white;
+            width: 100%;
+            padding-top: 1rem;
+        }
+        .info-block h2{
+            font-size: 20px;
+        }
+      </style>
+
+
+      <div class="container">
+        <div class="column">
+          <h1 class="logo">
+            <img src="./img/logo.jpg" alt="logo">
+            verse <sub>Beta</sub>
+          </h1>
+          <p class="desc">Proudly, The 1st of Its Kind Worldwide, AIO Digital Platform For The Global Community Of The Veterinary Industry</p>
+    
+          <div class="info-block">
+            <h2>Asia Head Office</h2>
+            <p>
+                <i class="fa-solid fa-envelope" style="margin-right:5px; font-size:13px"></i>
+                <img src="mail.png" alt=""> info@myvverse.com</p>
+                <p>
+                    <i class="fa-solid fa-phone" style="margin-right:5px; font-size:13px"></i>
+                    <img src="phone.png" alt=""> +971 52 7956665</p>
+            <p> <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="location.png" alt=""> Virtually Managed From UAE-Dubai</p>
+          </div>
+          
+          <div class="info-block">
+              <h2>Africa Head Office</h2>
+              <p>
+                  <i class="fa-solid fa-envelope" style="margin-right:5px; font-size:13px"></i>
+                <img src="mail.png" alt=""> info@myvverse.com</p>
+                <p>
+                <i class="fa-solid fa-phone" style="margin-right:5px; font-size:13px"></i>
+                <img src="phone.png" alt=""> +20 1008982000</p>
+            <p>
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="location.png" alt=""> Virtually Managed From Egypt-Cairo</p>
+          </div>
+    
+          <div class="separator"></div>
+    
+          <div class="info-block">
+            <h2>VV Arabic SM - MENA</h2>
+            <div class="socials">
+              <a href="https://www.facebook.com/" aria-label="Facebook" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-facebook-f" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <a href="https://www.instagram.com/" aria-label="Instagram" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-instagram" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <a href="https://twitter.com/" aria-label="X (Twitter)" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-twitter" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <a href="https://www.linkedin.com/" aria-label="LinkedIn" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-linkedin-in" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <a href="https://www.youtube.com/" aria-label="YouTube" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-youtube" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <a href="https://www.tiktok.com/" aria-label="TikTok" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-tiktok" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <a href="https://www.pinterest.com/" aria-label="Pinterest" style="display: inline-block; transition: transform 0.3s ease;"><i class="fab fa-pinterest-p" style="margin: 0 5px; font-size: 18px; color: white;"></i></a>
+              <style>
+                a[aria-label] i {
+                  transition: transform 0.3s ease;
+                }
+                a[aria-label]:hover i {
+                  transform: scale(1.2);
+                }
+              </style>
+            </div>
+          </div>
+    
+          <div class="info-block">
+            <h2>VV English SM - Global</h2>
+            <div class="socials">
+              <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+              <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+              <a href="https://twitter.com/" aria-label="X (Twitter)"><i class="fab fa-twitter" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+              <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+              <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fab fa-youtube" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+              <a href="https://www.tiktok.com/" aria-label="TikTok"><i class="fab fa-tiktok" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+              <a href="https://www.pinterest.com/" aria-label="Pinterest"><i class="fab fa-pinterest-p" style="margin: 0 5px; font-size: 18px; color:white"></i></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="column">
+          <h2>Home</h2>
+          <ul class="list">
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> The Dream</li>
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> The People</li>
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> The Timeline</li>
+          </ul>
+    
+          <h2>The Opportunities</h2>
+          <ul class="list">
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> Branding</li>
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> Income Streams</li>
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> Networking</li>
+          </ul>
+    
+          <h2>The Legalities</h2>
+          <ul class="list">
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> Privacy Policy</li>
+            <li><i class="fas fa-location" style="margin-right:5px; font-size:13px"></i> Terms and Conditions</li>
+          </ul>
+        </div>
+    
+        <div class="column">
+          <h2>The Vs</h2>
+          <ul class="list">
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Guide</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Blog</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Nation</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Tube</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Jobs</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Lance</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-College</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Market</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Events</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Webinars</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Experts</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Buzz</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Cast</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Books</li>
+            <li>
+                
+                <i class="fas fa-location" style="margin-right:5px; font-size:13px"></i>
+                <img src="icon.png" alt=""> V-Support</li>
+          </ul>
+        </div>
+    
+        <div class="column">
+          <h2>VV Assets</h2>
+          <ul class="list">
+            <li><i class="fas fa-blog" style="margin-right:5px; font-size:13px"></i> Blog Posts</li>
+            <li><i class="fas fa-users" style="margin-right:5px; font-size:13px"></i> Social Page</li>
+            <li><i class="fas fa-user-group" style="margin-right:5px; font-size:13px"></i> Social Groups</li>
+            <li><i class="fas fa-tv" style="margin-right:5px; font-size:13px"></i> Channels</li>
+            <li><i class="fas fa-video" style="margin-right:5px; font-size:13px"></i> Videos</li>
+            <li><i class="fas fa-clapperboard" style="margin-right:5px; font-size:13px"></i> Shorts</li>
+            <li><i class="fas fa-briefcase" style="margin-right:5px; font-size:13px"></i> Jobs</li>
+            <li><i class="fas fas fa-server" style="margin-right:5px; font-size:13px"></i> Services</li>
+            <li><i class="fas fa-diagram-project" style="margin-right:5px; font-size:13px"></i> Projects</li>
+            <li><i class="fas fa-graduation-cap" style="margin-right:5px; font-size:13px"></i> Courses</li>
+            <li><i class="fas fa-shop" style="margin-right:5px; font-size:13px"></i> Stores</li>
+            <li><i class="fas fa-box" style="margin-right:5px; font-size:13px"></i> Physical Products</li>
+            <li><i class="fas fa-file-arrow-down" style="margin-right:5px; font-size:13px"></i> Digital Products</li>
+            <li><i class="fas fa-calendar-day" style="margin-right:5px; font-size:13px"></i> Events</li>
+            <li><i class="fas fa-desktop" style="margin-right:5px; font-size:13px"></i> Webinars</li>
+            <li><i class="fas fa-user-doctor" style="margin-right:5px; font-size:13px"></i> Consultations</li>
+            <li><i class="fas fa-hand-holding-dollar" style="margin-right:5px; font-size:13px"></i> Sponsorships</li>
+            <li><i class="fas fa-podcast" style="margin-right:5px; font-size:13px"></i> Podcasts</li>
+          </ul>
+        </div>
+    
+        <div class="column">
+          <h2>VV Profiles</h2>
+          <ul class="list">
+            <li><i class="fas fa-user" style="margin-right:5px; font-size:13px"></i> Personal Profiles</li>
+            <li><i class="fas fa-building" style="margin-right:5px; font-size:13px"></i> Entity Profiles</li>
+            <li><i class="fas fa-pen" style="margin-right:5px; font-size:13px"></i> V-Blog Authors</li>
+            <li><i class="fas fa-newspaper" style="margin-right:5px; font-size:13px"></i> V-Nation Authors</li>
+            <li><i class="fas fa-video" style="margin-right:5px; font-size:13px"></i> V-Tube Authors</li>
+            <li><i class="fas fa-user-tie" style="margin-right:5px; font-size:13px"></i> V-Candidates</li>
+            <li><i class="fas fa-briefcase" style="margin-right:5px; font-size:13px"></i> V-Employers</li>
+            <li><i class="fas fa-laptop-code" style="margin-right:5px; font-size:13px"></i> V-Lancers</li>
+            <li><i class="fas fa-handshake" style="margin-right:5px; font-size:13px"></i> V-Clients</li>
+            <li><i class="fas fa-chalkboard-teacher" style="margin-right:5px; font-size:13px"></i> V-Instructors</li>
+            <li><i class="fas fa-store" style="margin-right:5px; font-size:13px"></i> V-Sellers</li>
+            <li><i class="fas fa-calendar-check" style="margin-right:5px; font-size:13px"></i> V-Organizers</li>
+            <li><i class="fas fa-microphone" style="margin-right:5px; font-size:13px"></i> V-Hosts</li>
+            <li><i class="fas fa-star" style="margin-right:5px; font-size:13px"></i> V-Experts</li>
+            <li><i class="fas fa-bullhorn" style="margin-right:5px; font-size:13px"></i> V-Influencers</li>
+            <li><i class="fas fa-podcast" style="margin-right:5px; font-size:13px"></i> V-Cast Authors</li>
+            <li><i class="fas fa-book" style="margin-right:5px; font-size:13px"></i> V-Books Authors</li>
+          </ul>
+        </div>
+        <div class="right">
+            Copyright © 2025 V-Verse.
+        </div>
+      </div>
+   
+    
+    
+        <script>
+            // Add any interactive functionality here
+            document.addEventListener('DOMContentLoaded', function() {
+                // Smooth scroll for anchor links
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+                
+                // Current year for copyright
+                document.querySelector('.footer-bottom p').innerHTML = 
+                    document.querySelector('.footer-bottom p').innerHTML.replace('2025', new Date().getFullYear());
+            });
+        </script>
+    
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Post Modal -->
+    <div class="modal" id="postModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create a Post</h2>
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <form id="postForm" enctype="multipart/form-data">
+                <input type="hidden" name="user_id" value="1"> <!-- Temporary hardcoded user ID -->
+                <div class="form-group">
+                    <textarea name="content" id="postContent" placeholder="What do you want to share with the veterinary community?" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="postImage">Add Image (optional)</label>
+                    <input type="file" id="postImage" name="image" accept="image/*">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile profile toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileToggle = document.querySelector('[data-profile-toggle]');
+            const leftSidebar = document.querySelector('.left-sidebar');
+            const overlay = document.getElementById('overlay');
+            
+            if (profileToggle && leftSidebar) {
+                // Add click event for profile toggle
+                profileToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    leftSidebar.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                    document.body.style.overflow = leftSidebar.classList.contains('active') ? 'hidden' : '';
+                });
+                
+                // Close sidebar when clicking overlay
+                overlay.addEventListener('click', function() {
+                    leftSidebar.classList.remove('active');
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+                
+                // Close sidebar when clicking outside on mobile
+                document.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768 && 
+                        !leftSidebar.contains(e.target) && 
+                        !profileToggle.contains(e.target) &&
+                        leftSidebar.classList.contains('active')) {
+                        leftSidebar.classList.remove('active');
+                        overlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Handle window resize
+                window.addEventListener('resize', function() {
+                    if (window.innerWidth > 768) {
+                        leftSidebar.style.left = '';
+                        leftSidebar.classList.remove('active');
+                        overlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
+        });
+
+        // Modal functionality
+        function openModal(type) {
+            const modal = document.getElementById('postModal');
+            const title = modal.querySelector('h2');
+            
+            switch(type) {
+                case 'photo':
+                    title.textContent = 'Share a Photo';
+                    break;
+                case 'video':
+                    title.textContent = 'Share a Video';
+                    break;
+                case 'event':
+                    title.textContent = 'Create an Event';
+                    break;
+                case 'article':
+                    title.textContent = 'Write an Article';
+                    break;
+                default:
+                    title.textContent = 'Create a Post';
+            }
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('postModal').style.display = 'none';
+        }
+
+        // function createPost() {
+        //     const postContent = document.querySelector('.modal-content textarea').value;
+        //     if (postContent.trim() === '') {
+        //         alert('Please enter some content for your post');
+        //         return;
+        //     }
+            
+        //     // In a real app, you would send this to a server
+        //     // alert('Post created successfully!');
+        //     closeModal();
+        //     document.querySelector('.modal-content textarea').value = '';
+        // }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('postModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Like functionality
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('fa-thumbs-up') || 
+                e.target.parentElement.classList.contains('post-action')) {
+                const likeBtn = e.target.closest('.post-action');
+                const icon = likeBtn.querySelector('i');
+                
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#0a66c2';
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
