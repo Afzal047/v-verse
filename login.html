@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Verse - Connect with Veterinary Professionals</title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-content">
+        
+    <div class="container">
+        <div class="left-section">
+            <h1 class="logo">V-Verse</h1>
+            <h2>Connect with veterinary professionals worldwide</h2>
+            <p>V-Verse is the premier digital platform for the global veterinary community. Join us to network, share knowledge, and grow your veterinary career.</p>
+        </div>
+        
+        <div class="right-section">
+            <div class="login-box"> 
+                <h2>Welcome back</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email address or phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="password-container">
+                            <input type="password" id="password" placeholder="Password" required>
+                            <i class="far fa-eye" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-btn">
+                        <i class="fas fa-right-to-bracket"></i>
+                        Log In</button>
+                        <br>
+                        <p > Or login with: </p>   
+                        <br>
+                        <div class="group-btn">
+                            <button type="submit" class="login-btn">
+                                <i class="fab fa-google"></i>
+                            </button>
+                                <button type="submit" class="login-btn">
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                                <button type="submit" class="login-btn gpay">
+                                <i class="fab fab fa-apple-pay"></i>
+                            </button>
+
+                        </div>
+                    <a href="#" class="forgot-password">Forgotten password?</a>
+                    <div class="divider"></div>
+                    <button type="button" onclick="window.location.href='signup.html' " class="create-account-btn">
+                        
+                        <i class="fas fa-plus"></i>
+                        Create New Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+    <script>
+        // Toggle password visibility
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        
+        togglePassword.addEventListener('click', function() {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+
+    <footer class="landing-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p class="copyright">All &copy; copyrights reserved for 2025</p>
+            </div>
+            <div class="footer-column">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <style>
+    
+         
+        .landing-footer {
+            display: none;
+            /* background: linear-gradient(90deg, #0052cc 0%, #d90751 100%); */
+            color: white;
+            padding: 15px 20px;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+            /* position:relative;  */
+            bottom: 0;
+            left: 0;
+            /* z-index: 10; */
+        }
+        .landing-footer {
+    position: relative; /* Change from absolute to relative */
+    margin-top: auto; /* Push footer to bottom */
+}
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 15px;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .footer-links li {
+            margin: 5px 0;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 16px;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            .page-wrapper {
+                padding-bottom: 160px; /* Increased space for mobile footer */
+            }
+            
+            .main-content {
+                padding: 20px 10px 60px;
+                min-height: calc(100vh - 160px); /* Ensure content takes up at least viewport height minus footer */
+            }
+            
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                padding: 15px 0;
+            }
+            
+            .footer-column {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            
+            .footer-links {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .footer-links li {
+                margin: 0 5px;
+            }
+            
+            .social-icons {
+                justify-content: center;
+                margin-top: 5px;
+            }
+            
+            .landing-footer {
+                padding: 10px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+        }
+    </style>
+</body>
+</html>
