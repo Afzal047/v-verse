@@ -1,0 +1,370 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --bgl: linear-gradient(135deg, blue, red);
+
+}
+body {
+    /* background-color: #f0f2f5; */
+    /* background-image: 
+        radial-gradient(circle at 25% 25%, rgba(24, 119, 242, 0.03) 0%, rgba(24, 119, 242, 0.03) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle at 75% 75%, rgba(24, 119, 242, 0.03) 0%, rgba(24, 119, 242, 0.03) 50%, transparent 50%, transparent 100%),
+        linear-gradient(135deg, #f0f2f5 0%, #e4e6eb 100%); */
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(24, 119, 242, 0.03) 0%, rgba(24, 119, 242, 0.03) 50%, transparent 50%, transparent 100%),
+        radial-gradient(circle at 75% 75%, rgba(24, 119, 242, 0.03) 0%, rgba(24, 119, 242, 0.03) 50%, transparent 50%, transparent 100%),
+        linear-gradient(135deg, #f0f2f5 0%, red 100%);
+    background: var(--bgl);
+        min-height: 100vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow-y: scroll;
+    color: white;
+}
+
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29-22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231877f2' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+    opacity: 0.8;
+    z-index: -1;
+    background: var(--bgl);
+}
+
+/* Container */
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px;
+    margin-top: 5%;
+    padding-left: 3rem;
+    align-items: center;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(1350deg, white 30% , red  );
+    /* background: var(--bgl); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* animation: shine 2s 1 ease-in-out forwards; */
+    animation: width 2s 1 ease-in-out forwards;  
+    text-wrap: nowrap;
+}
+@keyframes width {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.left-section h2 {  
+    font-size: 1.75rem;
+    color: #1c1e21;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.left-section p {
+    font-size: 1.1rem;
+    color: #4b4f56;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    max-width: 400px;
+height: max-content;
+margin-right: -4rem;
+}
+
+.login-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: scale 1s 1 ease-in-out forwards;  
+}
+
+@keyframes scale {
+   from {
+    scale: 0.4;
+    opacity: 0;
+   }
+   to {
+    scale: 1;
+    opacity: 1;
+   }
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+::placeholder{
+    font-size: 14px;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #acccf5;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+.group-btn {
+    display: flex;
+    gap: 1rem;
+
+}
+.group-btn .gpay{
+    font-size: 1.4rem;  
+    padding: 0;
+}
+.group-btn  i{
+    scale: 1.1;  
+}
+button:hover i{
+    scale: 1.39;
+    transition: scale 0.3s ease-in-out; 
+
+}
+.login-box h2{
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.login-box p {
+    color: #1c1e21;
+margin: 10px 0;
+margin-bottom: 0px;
+font-size: 14px;
+}
+
+ .signup{
+    /* background: linear-gradient(135deg, blue, red); */
+/* margin-top: -1rem; */
+margin-left: 2rem;
+
+}
+.password-container {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8d949e;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--bgl);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    /* font-size: 1.1rem; */
+    font-weight: 600;
+    cursor: pointer;
+    /* transition: background-color 0.2s; */
+}
+.login-btn, .create-account-btn i{
+    font-size: 13px;  
+}
+.login-btn:hover {
+    background: linear-gradient(to right, red 0%, blue 100%);
+    transition: background 5s ease-in-out; 
+}
+
+.forgot-password {
+    display: block;
+    /* color: #1a73e8; */
+    background: var(--bgl);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 15px 0;
+     
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    border-top: 1px solid #dadde1;
+    margin: 20px 0;
+}
+
+.create-account-btn {
+    background: linear-gradient(to right, red 0%, rgb(39, 39, 216) 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    /* font-size: 0.9rem; */
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: background-color 0.2s;
+ 
+}
+
+.create-account-btn:hover {
+    background: linear-gradient(to right, blue 0%, red 100%);
+}
+
+.create-page {
+    font-size: 0.85rem;
+    color: #1c1e21;
+    margin-top: 20px;
+}
+
+.create-page a {
+    color: #1a73e8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .left-section {
+        padding: 0 20px 40px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .right-section {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .login-box h2{
+        font-size: 1rem;
+    color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .left-section p {
+        font-size: 1rem;
+    }
+    
+    .login-box {
+        box-shadow: none;
+        background: transparent;
+    }
+}
+@media screen and (max-width: 768px) {
+    .left-section h1{
+        font-size: 2rem;
+        /* margin-top: -3rem; */
+    }
+    ::placeholder{ 
+    font-size: 14px;
+    }
+
+    .left-section h2 {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        /* white-space: nowrap; */
+        margin-left: -1rem;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .container{
+        padding-left: 5px;
+    }
+    .left-section p{
+        display: none;
+    }
+    .login-box p {
+        font-size: 12px;
+        color: white;
+    }
+    .forgot-password{
+        color: white;
+    }
+    .login-box {
+
+        margin-top: -5rem;
+    }
+}
+
+
